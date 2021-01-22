@@ -1,5 +1,5 @@
 function alert1(){
-    alert("你好杜艺林");
+    alert("你好");
     alert("请欣赏唐诗");
    
 }
