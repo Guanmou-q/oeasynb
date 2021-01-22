@@ -7,7 +7,7 @@
     <title>title</title>
     <style>
         body {
-            background-image: url(images/0.jpg);
+            background-image: url(images/5.jpeg);
             background-size: 100% 100%;
         }
 
@@ -26,11 +26,29 @@
 
         }
 
-        h1,
-        p {
-            animation: myfirst 1s;
+        @keyframes m {
+            0% {
+                opacity: 0
+            }
+
+            20% {
+                opacity: 100
+            }
+
+            30% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 100%
+            }
+        }
+
+        #d {
+            animation: m 10s infinite;
         }
     </style>
+
 </head>
 
 <body>
@@ -40,15 +58,17 @@
         <embed height="0" width="0" src="../001Basic/bgm/bgm.mp3"></embed>
     </p>
     <hr>
-
+    <script src="js/js.js"></script>
     <h1>静夜思</h1>
     <p><strong><em>李白</em></strong></p>
     <p>床前明月光，</p>
     <p>疑是地上霜。</p>
     <p>举头望明月，</p>
+
     <p>低头思故乡.</p>
-    <script src="/oeasynb/001Basic/js/js.js"></script>
+
     <hr>
+
 </body>
 
 </html>
