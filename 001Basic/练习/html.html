@@ -1,30 +1,65 @@
-<!DOCTYPE html>  <!--！加回车输入框架-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>这是标题</title>
-    <!--body{
-        
-    }这是错误的一定要加上<style>-->
-        <style>
-            body{
-        
-
-                background-image: url(../images/0.jpg);
-                background-size: 100% 100%;
-            }
-            html{
-                height: 100%;
-            }
-        </style><!--直接输入标签回车会自己输入好练习三次p 好
-    h1-->
+    <title>Document</title>
 </head>
 <body>
-    <h1>我系胡安妮</h1>
-    <strong>我比你大</strong>
-    <em>我是倾斜的</em>
-    <hr>
-    <script src="https://guanmou-q.github.io/oeasynb/001Basic/js/js.js"> </script>
+    <div id="mass">
+    </div>
+    
 </body>
+    <script>
+        var a=Math.random(Math.random());
+        a=Math.ceil(a*6);
+        var bigo=false;
+        var str;
+        
+     
+        console.info(a);
+        console.log(a);
+        function guess(){
+          
+            if(bigo){
+                return;
+            }
+            else{
+                t=prompt("猜猜这个是几")*1;
+               if(!Number.isInteger(t)||t<1||t>6){
+                   alert("格式有误");
+                   return ;
+               }
+              
+
+            var bff=Math.abs(t-a);
+            console.info(bff);
+            
+            if(t==a){
+                str = "猜中了"+"<img src=\"../images/1.jpeg\">"
+                bigo=1;
+            }
+            else if(t>a)
+                    if(bff>1)
+                    str="大得多"
+                    else{
+                        str="有点大";
+                    }
+                else    
+                if(bff>1)
+                    str="小得多"
+                    else{
+                        str="有点小";
+                    }
+
+       
+        }
+        document.getElementById("mass").innerHTML=str;
+        }
+        guess();
+
+        guess();
+     
+        
+    </script>
 </html>
